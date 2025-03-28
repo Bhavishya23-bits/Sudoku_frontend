@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="cc.css">
+        <script src="cc.js" defer></script>
+        <link rel="icon" href="https://static-00.iconduck.com/assets.00/sudoku-icon-512x512-qnhiasa3.png" alt="sudoku" type="image/png">
+        <title>Sudoku</title>
+    
+</head>
+<body>
+    <h1 class="sudoku-title">SUDOKU</h1>
+    <h2 id="a">ERRORS COUNTED: <span id="error-count">0</span></h2><br>
+    
+    <div id="controls">
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="start-game">New Game</button>
+        <button id="start-timer">Start Timer</button>
+        <button id="stop-timer">Stop Timer</button>
+         <br>
+        <span id="timer">Time: 00:00</span>
+    </div>
+    <div id="sudoku-container">
+    <div id="table"></div>
+    <div id="digits"></div>
+    </div>
+</body>
+</html>
